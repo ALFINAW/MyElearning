@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
-import '../view/login_view.dart';
+import '../view/user_dashboard_view.dart';
 
-class LoginController extends State<LoginView> {
-  static late LoginController instance;
-  late LoginView view;
+class UserDashboardController extends State<UserDashboardView> {
+  static late UserDashboardController instance;
+  late UserDashboardView view;
 
   @override
   void initState() {
@@ -18,8 +18,6 @@ class LoginController extends State<LoginView> {
   @override
   Widget build(BuildContext context) => widget.build(context, this);
 
-  login() async {
-    //logic untuk login
-    Get.offAll(UserMainNavigationView());
-  }
+  int currentIndex = 0;
+  final CarouselController carouselController = CarouselController();
 }

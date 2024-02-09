@@ -75,7 +75,7 @@ class LoginView extends StatefulWidget {
                   ),
                   QOutlineButton(
                     label: "Sign in",
-                    onPressed: () {},
+                    onPressed: () => controller.login(),
                   ),
                   const SizedBox(
                     height: 12.0,

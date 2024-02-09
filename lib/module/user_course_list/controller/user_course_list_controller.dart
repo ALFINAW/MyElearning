@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hyper_ui/core.dart';
-import '../view/login_view.dart';
+import '../view/user_course_list_view.dart';
 
-class LoginController extends State<LoginView> {
-  static late LoginController instance;
-  late LoginView view;
+class UserCourseListController extends State<UserCourseListView> {
+  static late UserCourseListController instance;
+  late UserCourseListView view;
 
   @override
   void initState() {
@@ -17,9 +17,4 @@ class LoginController extends State<LoginView> {
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
-
-  login() async {
-    //logic untuk login
-    Get.offAll(UserMainNavigationView());
-  }
 }

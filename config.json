@@ -2,7 +2,13 @@
     "modules": [
         "wellcome",
         "login",
-        "sign_up"
+        "sign_up",
+        "user_dashboard",
+        "user_main_navigation",
+        "user_search_category_list",
+        "user_course_list",
+        "user_course_favorite_list",
+        "user_profile"
     ],
     "module_directory_name": "module",
     "experimental_mode": false,
